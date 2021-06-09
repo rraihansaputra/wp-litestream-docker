@@ -9,8 +9,8 @@ Current state:
 - Uses `wordpress` as the base image to not need nginx image to serve. Might be able to add it in here
 
 Next steps:
-- integrate streamlite with https://github.com/benbjohnson/litestream-docker-example as reference
-- add the streamlite configuration.. somewhere
+- integrate litestream with https://github.com/benbjohnson/litestream-docker-example as reference
+- add the litestream configuration.. somewhere
 
 How to run:
 - clone this repo
