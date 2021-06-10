@@ -17,8 +17,8 @@ RUN chown www-data:www-data /data
 
 COPY litestream.yml /etc/litestream.yml
 
-# TODO DELETE WHEN DONE
-COPY secrets/google-creds.json /etc/google-creds.json
+# "Conditional copy" for GCS creds
+COPY Dockerfile secrets/google-creds.json* /etc/
 ENV GOOGLE_APPLICATION_CREDENTIALS=/etc/google-creds.json
 
 COPY entrypoint.sh /scripts/entrypoint.sh
