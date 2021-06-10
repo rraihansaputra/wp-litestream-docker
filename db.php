@@ -4899,5 +4899,7 @@ namespace {
     }
 
     $GLOBALS['wpdb'] = new WP_SQLite_DB\wpsqlitedb();
-}
 
+    // ENABLE WAL https://github.com/aaemnnosttv/wp-sqlite-db/issues/3
+    $GLOBALS['wpdb']->query('PRAGMA journal_mode = wal;');
+}
