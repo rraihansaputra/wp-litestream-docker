@@ -9,5 +9,4 @@ else
 fi
 
 # Run litestream with your app as the subprocess.
-exec litestream replicate
-# exec litestream replicate -exec "docker-entrypoint.sh"
+exec litestream replicate -exec "docker-entrypoint.sh apache2-foreground"

@@ -23,11 +23,7 @@ ENV GOOGLE_APPLICATION_CREDENTIALS=/etc/google-creds.json
 
 COPY entrypoint.sh /scripts/entrypoint.sh
 
-
 RUN chown www-data:www-data /scripts/entrypoint.sh
 RUN chmod 766 /scripts/entrypoint.sh
 
-# CMD ["/scripts/run.sh"]
-# RUN ["/scripts/entrypoint.sh"]
-
-# CMD ["apache2-foreground"]
+CMD ["/scripts/entrypoint.sh"]
