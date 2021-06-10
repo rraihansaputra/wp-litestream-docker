@@ -11,6 +11,7 @@ Current state:
 Next steps:
 - integrate streamlite with https://github.com/benbjohnson/litestream-docker-example as reference
 - add the streamlite configuration.. somewhere
+- add media upload to s3/gcs too (WP Offload Media Lite?)
 
 How to run:
 - clone this repo
@@ -19,4 +20,5 @@ How to run:
 
 Other Goals:
 - run on wordpress:alpine for a lighter image
+- how to customize theme/settings easily. Another repo to host the customized Dockerimage? maybe.
 - Personal: somehow automate WP -> static site. Either in here / with plugin / other process
