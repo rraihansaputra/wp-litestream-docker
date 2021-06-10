@@ -24,8 +24,8 @@
 #define('WP_ALLOW_REPAIR', true);
 define('FS_METHOD', 'direct');
 
-define('DB_DIR', '/var/www/html/wp-content/database/');
-define('DB_FILE', '.ht.sqlite');
+define('DB_DIR', '/data/');
+define('DB_FILE', 'db');
 
 /** Database Charset to use in creating database tables. */
 #define('DB_CHARSET', 'utf8mb4');
