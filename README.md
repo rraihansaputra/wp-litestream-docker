@@ -9,10 +9,10 @@ Current state:
 - Uses `wordpress` as the base image to not need nginx image to serve. Might be able to add it in here
 
 Next steps:
-- *WIP* integrate streamlite with https://github.com/benbjohnson/litestream-docker-example as reference
+- *WIP* integrate litestream with https://github.com/benbjohnson/litestream-docker-example as reference
   - SQLite <-> WP works well on volume mounting. Seems like WP doesn't play well with WAL. Need to investigate
   - entrypoint.sh still not working. `exec user process coused: exec format error`. Weird as I can execute `litestream` no problem when I bash into the container
-- add the streamlite configuration.. somewhere
+- add the litestream configuration.. somewhere
 - add media upload to s3/gcs too (WP Offload Media Lite?)
 
 How to run:
