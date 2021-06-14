@@ -10,6 +10,7 @@ Current state:
 - integrated litestream with https://github.com/benbjohnson/litestream-docker-example as reference
 
 Next steps:
+- Somehow abstract the Google creds into ENV/bind (README?)
 - add media upload to s3/gcs too (WP Offload Media Lite?)
 
 How to run:
