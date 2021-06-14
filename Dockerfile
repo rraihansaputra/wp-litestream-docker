@@ -26,4 +26,5 @@ COPY entrypoint.sh /scripts/entrypoint.sh
 RUN chown www-data:www-data /scripts/entrypoint.sh
 RUN chmod 766 /scripts/entrypoint.sh
 
+USER www-data
 CMD ["/scripts/entrypoint.sh"]
